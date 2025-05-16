@@ -6,11 +6,11 @@ import plotly.express as px
 import gspread
 from google.oauth2.service_account import Credentials
 
-scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-creds = Credentials.from_service_account_file("credentials.json",scopes=scopes)
-client = gspread.authorize(creds)
 
-sheet_id = "1Qh7dKXTHheC3J8Q_YUTa8d6GPeh08s482utg8qCNNyo"
+creds_dict = json.loads(st.secrets["google"]["Cred_JSON"])
+sheet_id   = st.secrets["google"]["sheet_id"]
+scopes = ["https://www.googleapis.com/auth/spreadsheets"]
+
 
 
 @st.cache_resource
