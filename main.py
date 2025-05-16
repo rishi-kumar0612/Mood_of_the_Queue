@@ -14,7 +14,7 @@ scopes     = ["https://www.googleapis.com/auth/spreadsheets"]
 
 @st.cache_resource
 def get_sheet():
-    creds = Credentials.from_service_account_file("credentials.json", scopes=scopes)
+    creds = Credentials.from_service_account_file(creds_dict, scopes=scopes)
     client = gspread.authorize(creds)
     # open by key instead of name
     return client.open_by_key(sheet_id).sheet1
