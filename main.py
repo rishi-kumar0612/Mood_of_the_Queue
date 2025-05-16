@@ -9,8 +9,7 @@ from google.oauth2.service_account import Credentials
 
 creds_dict = json.loads(st.secrets["google"]["Cred_JSON"])
 sheet_id   = st.secrets["google"]["sheet_id"]
-scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-
+scopes     = ["https://www.googleapis.com/auth/spreadsheets"]
 
 
 @st.cache_resource
