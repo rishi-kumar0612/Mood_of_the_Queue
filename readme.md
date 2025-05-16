@@ -39,7 +39,6 @@ A simple Streamlit app for logging and visualizing the mood of a support ticket 
     sheet_id = "YOUR_SHEET_ID"
 
 # Run
-    ```bash
     streamlit run main.py
 
 Open the URL shown in your browser to use the app.
