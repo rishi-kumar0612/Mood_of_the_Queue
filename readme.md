@@ -22,7 +22,7 @@ A simple Streamlit app for logging and visualizing the mood of a support ticket 
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/Mood_of_the_Queue.git
+   git clone https://github.com/rishi-kumar0612/Mood_of_the_Queue.git
    cd Mood_of_the_Queue
 
 2. Install dependencies:
